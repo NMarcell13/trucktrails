@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Truck Trails</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=kyTXsOavZP3eaiuxRnHrXMnz4osB0D1yMX4sNzqLXDxKbR-2PzPMlfiw3MuUta7GJ3b-sAq1hkAoxkWHaObP6fGwAFWA8gzwi5iM19hh_kYv_eQNHUYLXmxDBP5FF3G0sb-jMUdbIKRkYMjSbTF--ohKRPsifVv7KbhN1ayo6dHydzk7ox96QHzPECuhMT3kjl_gxPd0qfIgHQAXcFZL4DxZ8quIsf29KHJiUjf_hiKhkE_AjUpE8pn2VwO66TS1TqCHCEPKCKNfQNwNBGsNP-mRe2sA7YMA9gjMlL20WZesn12fIvQ3cybItz1Zhu_ypio_ZVjnvkrAyD7FG4pRIopiLWBPTKDXho2Wr_2H--NUAaGOPiJ6qpxLBZ5Th-YpUynDcrrHY_f26kckR8OqWT2gH_NRcZFk8vvnqde3BvDCBJG6sl7nOqeABchsJABSdelWXt6EElINy3U5xFcLaa74lRuQCn0jbGXzdnG3gbjMtlVzsaqgmMqHphIj4vx-iHOxD9S6P3YamF2DIIXqHUQyWvNnLfCLSRG2UQllikr--w_EZo5h_MgXIqkluiZ7hshaXO6edDHwwaHHD9rW0HB88cP9lb_KvSqonCHaNLM0BDZ1aZyOmol58I4AXHbMtJM0kR6M5Fydle5OneT787jKoG0XuyYSBI39TLF2ze_6winbXL1XplHBtktN80tQHlT03uhXQlpcAuz_JCQ4wTsIl21vNO9vVHexISq14a6k_KhnbNtuiLskbJ0M_PENZj-fplESopeFB38OlqGE60ib8_2544EXotvoAo2Ujnp3dW_bSPRL2ywWXY5YyAfTf6aVPEMCN4wfpkkOjzLdaF-TkPVB7OJMVeE-hQYj5LE3XE5mjjJ_9026w1YP0NrQcz0u4c_1jmNYkPeipQDBaGEpHJjrwg4_k8aFPR9FBb1SfS6_vNXWAFTPxvSPKj_5hf1JsOuaQrkEALmMoRfvInfc_f_gP77ORKFYJZUH0z-q9_i-7j8E7BOnoCjqPA3kqMmsoOG1UNp6cpQQhhyrJytTSV1Vg1A3ELHNf7_2R3gfMcW1_-12Q5o5Z3X_3ni8bfgU8YDA-o06avKD5hlGCLIJqyHRALpv0tm6fXscayeYTE8n9ZdxzNYixhkdGNBGrHvZiii_V-3p63c3S6Qs7-Y8mMehA3emXeFeCXKYo9IKn1KIozlexPJZFkJtlVjR3eouWX6sxs_iht47v0E8e0OCkoKmJp3iEV9VwFxyk3d_avR0KKGGC_AdWWwD1xEsuk0sjM4iU-MzykVX1GbyPiW3NUsvJaRuJtHpQKaZYXwXe-DvdoxUCuzTS453KwQjBDE0h7lObnPl_41Xm56d7eXSuWL4RtGrvAgW1nXApRU5BCuQWgbSHaCq1zoiR3C87nUaOARom3X_AIiIfJxQ5gOr0mbJzbuG0jmJO19qzU6yewR4GbbGjiHyRsaosLCGigowsx2m0vJNPlkr6V_9W7B0FkynP-ibJ4ifr7gjjYHJjMiLn7HrDqNilb2DbsojD3qDZEbVKcKT20BAY3eqxIiWJc-h98b5A4_m8wku7YYZdoIvIQ6iopbR41068YducZujygFrPogsgA_wpBJItey2eEhnKThgSEIAG5LtAEPRvDXgQZ2EpqyW_y7OuQLR" nonce="de94995574afdef1595c35ff03f81109" charset="UTF-8"></script><script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js"
+        integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container noselect">
+        <div class="wrapper">
+          <button class="popup" id="color-picker" onclick="szinvalaszto()">
+            <i class="fas fa-play"></i>
+            Színválasztó
+
+            <span class="popuptext" id="myPopup"><input type="button" value="Piros" class="szingomb" onclick="piros()"> <input type="button" value="Kék" class="szingomb" onclick="kek()"> <input type="button" value="Zöld" class="szingomb" onclick="zold()"> <input type="button" value="Fekete" class="szingomb" onclick="fekete()"></span>
+          </button>
+          <button id="replay">
+            <i class="fas fa-play"></i>
+            Újraindítás
+          </button>
+
+          
+
+          
+          <div id="canvas">
+           
+        </div>
+          <div id="ui">
+            <h2>  PONTSZÁM
+            </h2>
+            <span id="score">00</span>
+          </div>
+        </div>
+        <div id="author">
+          <button class="EW" >EPILEPSY WARNING <span >⚠</span></button>
+          <br>
+          <h1>TRUCK TRAILS</h1> <span>by Nágel Marcell & Nagy Dávid</span>
+          
+          
+        </div>
+      </div>
+      <!-- Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
